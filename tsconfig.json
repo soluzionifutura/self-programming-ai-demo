@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "es2020",                  // Set the JavaScript language version for emitted JavaScript and include compatible library declarations
+    "module": "commonjs",                // CommonJS modules are widely used in Node.js
+    "lib": ["es2020"],                   // Include library files for ECMAScript 2020 features
+    "outDir": "./dist",                  // Redirect output structure to the 'dist' folder
+    "rootDir": "./src",                  // Specify the root folder within your source files
+    "strict": true,                      // Enable all strict type-checking options
+    "esModuleInterop": true,             // Enables compatibility with Babel/TypeScript default imports
+
+    /* Module Resolution Options */
+    "moduleResolution": "node",          // Choose the module resolution strategy compatible with Node.js
+    "resolveJsonModule": true,           // Allow importing .json files
+
+    /* Advanced Options */
+    "skipLibCheck": true,                // Skip type checking of declaration files
+    "forceConsistentCasingInFileNames": true // Disallow inconsistently-cased references to the same file.
+  },
+  "include": ["src/**/*"],              // Include all files in the src folder
+  "exclude": ["node_modules", "dist"]   // Exclude node_modules and dist from the compilation
+}

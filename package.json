@@ -1,0 +1,25 @@
+{
+  "name": "self-programming-ai-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "dev": "nodemon --watch './src/**/*' --ext ts,json --exec 'npm run build'",
+    "copy-json": "find ./src -name \"*.json\" -exec sh -c 'mkdir -p ./dist/$(dirname \"{}\" | cut -c 6-) && cp \"{}\" \"./dist/$(echo {} | cut -c 6-)\"' \\;",
+    "build": "tsc -p . && npm run copy-json"
+  },
+  "keywords": [],
+  "author": "Giovanni Bruno",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.9.0",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "openai": "^4.17.4"
+  }
+}

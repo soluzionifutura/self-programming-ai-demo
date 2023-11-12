@@ -1,0 +1,35 @@
+# Dependency directories
+node_modules/
+
+# Debug log from npm
+npm-debug.log*
+
+# Environment variable files
+.env
+
+# Build artifacts
+dist/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache (uncomment if you use parcel)
+# .cache
+
+history.json

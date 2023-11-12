@@ -1,0 +1,26 @@
+{
+  "name": "save-fn",
+  "description": "Save a function a new GENERATED function to be used later. THE FUNCTION MUST BE EXPORTED AS exports.default = function... ; the exported function MUST RETURN A STRING",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "Name of the function to be saved"
+      },
+      "description": {
+        "type": "string",
+        "description": "Description of the function to be saved"
+      },
+      "parameters": {
+        "type": "string",
+        "description": "Parameters of the function in a JSON schema format"
+      },
+      "fn": {
+        "type": "string",
+        "description": "The JS code of the function"
+      }
+    },
+    "required": ["name"]
+  }
+}
